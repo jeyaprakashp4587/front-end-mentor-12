@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+/* font-family: 'Barlow', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600&display=swap');
+/* font-family: 'Fraunces', serif; */
+body{
+    width: 100%;
+    height: 100vh;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://i.ibb.co/xXGLz4M/image-header.jpg");
+    /* border: 1px solid red; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* text-align: center; */
+}
+.main-cont{
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    /* border: 1px solid red;  */
+    height: 60vh;  
+}
+.mt{
+    margin-top: 8rem;
+}
+.main-cont h1{
+    font-size: 3rem;
+    padding-top: 2rem;
+    color: hsl(0, 0%, 100%);  
+    font-weight: 900; 
+}
+.nav-flex{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: end;
+    margin-top: 1rem;
+}
+.nav ul{
+    display: flex;
+    justify-content: end;
+    /* border: 1px solid red; */
+    align-items: center;
+    height: 90%;
+    width: 100%;
+    font-family: 'Barlow', sans-serif;
+}
+.nav ul li{
+    list-style-type: none;
+    margin: 1rem;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+}
+.nav ul button{
+    font-family: 'Fraunces', serif;
+    background: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    width: 100px;
+    color: hsl(212, 27%, 19%);
+    font-weight: 600;
+    border: none;
+}
+.nav ul button:hover{
+    background: rgba(255, 255, 255, 0.329);
+    transition: 0.3s;
+}
+/* sections */
+
+.sections{
+    /* border: 1px solid red; */
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.section{
+    /* border: 1px solid red; */
+    width: 100%;
+}
+.section-p{
+    width: 100%;
+    padding: 6rem; 
+    padding-top: 12rem;   
+}
+.section-p h3{
+    font-family: 'Fraunces', serif;
+    font-weight: 900; 
+    color: hsl(212, 27%, 19%);
+    font-size: 2.3rem;
+}
+.section-p p{
+    color: hsl(213, 9%, 39%);
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.2rem;
+}
+.section-p h6{
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    position: relative;
+}
+.section-p h6::after{
+    content:" ";
+    position: absolute;
+    background: hsla(7, 78%, 66%, 0.397);
+    width: 130px;
+    bottom: 0px;
+    border-radius: 20px;
+    left: -10px;
+    z-index: -1;
+    height: 9px;
+}
+.section img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+/* clients */
+
+.client{
+   /* border: 1px solid red; */
+   text-align: center;
+}
+.client h3{
+    color: hsla(210, 9%, 39%, 0.5);
+    font-family: 'Fraunces', serif;
+    letter-spacing: 0.6rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.clients img{
+    border-radius: 90%;
+    width: 100px;
+    height: 100px;
+}
+.clients{
+    width: 400px;
+}
+.clients p {
+    color: hsl(232, 10%, 55%);
+    padding-top: 2rem;
+    font-size: 20px;
+}
+.clients h4{
+    color: hsl(212, 27%, 19%);
+    font-weight: 600;
+    font-family: 'Fraunces', serif;
+    padding-top: 2rem;
+}
+.clients h6{
+    color: hsla(210, 9%, 39%, 0.5);
+    font-weight: 500;
+}
+.client-flex{
+    display: flex;
+    justify-content: space-between;
+}
+/* images */
+.images{
+    height: auto;
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: center;
+}
+.images img{
+    width: 25%;
+    height: inherit;
+}
+
+
+/* footer */
+.footer{
+    height: 40vh;
+    background-color: hsl(168, 34%, 41%);
+    display: grid;
+    place-content: center;
+}
+.logos{
+    display: flex;
+    justify-content: center;
+}
+.fot-cont{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.fot-nav{
+    display: flex;
+}
+.fot-nav  li{
+    /* padding: 0.9rem; */
+    list-style-type: none;
+    color: hsl(167, 40%, 24%);
+    font-size: 1.5rem;
+    padding: 0.6rem;
+    font-weight: 400;
+    margin: 2rem 0;
+    font-family: 'Barlow', sans-serif;
+}
+.fot-nav li:hover {
+    color: white;
+    transition: 0.5s;
+}
+.icons{
+    color: hsl(167, 40%, 24%);
+    display: flex;
+    justify-content: center;
+}
+.icons i{
+    padding: 1rem;
+    font-size: 2rem;
+}
+.icons i:hover{
+    color: white;
+    transition: 0.5s;
+}
